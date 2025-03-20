@@ -54,16 +54,23 @@ function openPoemPage(poem) {
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>${poem.title} - ${poem.author}</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Gotu&family=Kalam:wght@300;400;700&family=Yatra+One&display=swap" rel="stylesheet">
+
             <style>
                 * {
                     margin: 0;
                     padding: 0;
                     box-sizing: border-box;
-                    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                    
+                    
                 }
                 
                 body {
-                    background-color: #f9f9f9;
+                    background-color:rgb(20, 19, 19);
                     color: #333;
                     padding: 2rem;
                     line-height: 1.6;
@@ -73,9 +80,13 @@ function openPoemPage(poem) {
                     max-width: 800px;
                     margin: 0 auto;
                     background-color: white;
+                    background-image: url("../assets/paperbg.jpeg");
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    
                     padding: 3rem;
                     border-radius: 8px;
-                    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+                    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.1);
                 }
                 
                 .poem-header {
@@ -86,21 +97,33 @@ function openPoemPage(poem) {
                 }
                 
                 .poem-title {
-                    font-size: 2.5rem;
-                    color: #2c3e50;
+                    font-size: 3.5rem;
+                    color:rgb(47, 24, 5);
                     margin-bottom: 0.5rem;
+                    font-family: "Yatra One", system-ui;
+  font-weight: 600;
+  font-style: normal;
+}
                 }
                 
                 .poem-author {
                     font-size: 1.2rem;
-                    color: #7f8c8d;
+                    color:rgb(52, 26, 9);
                     font-style: italic;
+                    font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
                 }
                 
                 .poem-content {
-                    font-size: 1.1rem;
+                    font-size: 1.3rem;
                     white-space: pre-line;
                     margin-bottom: 2rem;
+                    margin-left: 2rem;
+                    color: rgb(33, 17, 6);
+                    font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
                 }
                 
                 .poem-description {
@@ -108,24 +131,25 @@ function openPoemPage(poem) {
                     color: #555;
                     margin-bottom: 2rem;
                     padding: 1rem;
-                    background-color: #f5f5f5;
+                    background-color:rgba(245, 245, 245, 0.18);
                     border-radius: 4px;
                 }
                 
                 .back-button {
                     display: inline-block;
                     padding: 0.5rem 1rem;
-                    background-color: #3498db;
+                    background-color:rgb(35, 19, 4);
                     color: white;
                     text-decoration: none;
                     border-radius: 4px;
                     transition: background-color 0.3s;
                     cursor: pointer;
                     border: none;
+                    font-style: italic;
                 }
                 
                 .back-button:hover {
-                    background-color: #2980b9;
+                    background-color:rgb(93, 77, 59);
                 }
             </style>
         </head>

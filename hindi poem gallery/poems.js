@@ -1,58 +1,129 @@
 const poemsData = [
     {
         "id": 1,
-        "title": "The Road Not Taken",
-        "description": "A reflection on life's choices and paths not followed.",
-        "author": "Robert Frost",
-        "content": "Two roads diverged in a yellow wood,\nAnd sorry I could not travel both\nAnd be one traveler, long I stood\nAnd looked down one as far as I could\nTo where it bent in the undergrowth;\n\nThen took the other, as just as fair,\nAnd having perhaps the better claim,\nBecause it was grassy and wanted wear;\nThough as for that the passing there\nHad worn them really about the same,\n\nAnd both that morning equally lay\nIn leaves no step had trodden black.\nOh, I kept the first for another day!\nYet knowing how way leads on to way,\nI doubted if I should ever come back.\n\nI shall be telling this with a sigh\nSomewhere ages and ages hence:\nTwo roads diverged in a wood, and I—\nI took the one less traveled by,\nAnd that has made all the difference."
+        "title": "घास",
+        "description": "यह कविता सामाजिक पाखंड और मानवीय स्वार्थ को उजागर करती है, जहाँ बाहरी सफ़ाई के नाम पर असल समस्याओं को नज़रअंदाज़ किया जाता है।।",
+        "author": "भवति ",
+        "content": "मैंने सुना तुम घर सुधार रहे हो\? \nअच्छा तभी ये आंगन की घास उखाड़ रहे हो \nहाँ ठीक ही है, आंखों को चुभने लगी थी,\nछत से रिसते पानी से, दिन-ब-दिन बढ़ने लगी थी।\n\nकल जब कमरे में बैठी मैं दरार से झांक रही थी ,\nये कमबख्त टूटे फर्श पर बेखौफ नाच रही थीं।\n\nअब माना दरवाजा नहीं है,\nऔर कोई फल सब्जी ताज़ा नहीं है।\n\nये मामूली दिक्कतें हैं, कोई ज्यादा नहीं।\nऔर भई इन्हें ठीक करने का हमारा कोई इरादा नहीं।\n\nअभी हम जूझ रहे एक विपदा से,जो घर पर घिर आयी है।\nजिसने हमारी सभ्यता को, ठेस बड़ी पहुंचाई है।\n\nअब हम इस घास को ही नहीं, पूरे फर्श को उजाड़ देंगे ।\nफिर चाहे जिंदगी पूरी, उस मलबे में गुजार देंगे।\n\nहम सभ्य लोग हैं, \nदेखो सफाई की आड़ में हमने कितनी गंद फैलाई है।\nऔर करें भी क्यों ना,\n हमारी मर्जी के खिलाफ घर में आज घास उग आयी है।"
     },
     {
         "id": 2,
-        "title": "Hope is the thing with feathers",
-        "description": "A beautiful metaphor for hope as a bird that persists through storms.",
-        "author": "Emily Dickinson",
-        "content": "Hope is the thing with feathers\nThat perches in the soul,\nAnd sings the tune without the words,\nAnd never stops at all,\n\nAnd sweetest in the gale is heard;\nAnd sore must be the storm\nThat could abash the little bird\nThat kept so many warm.\n\nI've heard it in the chillest land,\nAnd on the strangest sea;\nYet, never, in extremity,\nIt asked a crumb of me."
+        "title": "आईना",
+        "description": "यह कविता आत्मसंवाद और अकेलेपन की गहरी भावना को दर्शाती है, जहाँ कवि अपने ही प्रतिबिंब से स्नेह और सांत्वना की उम्मीद करता है, मानो वही उसका एकमात्र सच्चा सहारा हो।",
+        "author": "भवति ",
+        "content": "सुनो,\nतुम आइने से बाहर निकल क्यों नहीं आती हो?\nमुझे रोता देख मेरा सर क्यों नहीं सहलाती हो?\nमुझे बिखरते देख गले क्यों नहीं लगाती हो?\nक्यों नहीं मुझे तुम हर बार ये समझाती हो,\nकि अपनों में मुझे सिर्फ तुम समझ पाती हो?\n\n"
+
     },
     {
         "id": 3,
-        "title": "Ozymandias",
-        "description": "A meditation on the impermanence of power and the legacy of great leaders.",
-        "author": "Percy Bysshe Shelley",
-        "content": "I met a traveller from an antique land,\nWho said—\"Two vast and trunkless legs of stone\nStand in the desert. . . . Near them, on the sand,\nHalf sunk a shattered visage lies, whose frown,\nAnd wrinkled lip, and sneer of cold command,\nTell that its sculptor well those passions read\nWhich yet survive, stamped on these lifeless things,\nThe hand that mocked them, and the heart that fed;\nAnd on the pedestal, these words appear:\nMy name is Ozymandias, King of Kings;\nLook on my Works, ye Mighty, and despair!\nNothing beside remains. Round the decay\nOf that colossal Wreck, boundless and bare\nThe lone and level sands stretch far away.\""
+        "title": "माँ",
+        "description": "यह कविता माँ से बिछड़ने की पीड़ा और उसके बिना जीवन के सूनेपन को व्यक्त करती है। इसमें एक वयस्क व्यक्ति के भीतर छुपी नन्ही बच्ची की भावनाएँ झलकती हैं, जो माँ की अनुपस्थिति में असहाय महसूस करती है।",
+        "author": "भवति ",
+        "content": "उसे घर की देहली लाँघे अभी कुछ घंटे ही हुए हैं\nऔर मैं एक अर्से से हंसी नहीं।\nजीवन जैसे नीरस हो गया है,\nसंसार से रंग धुल गए हैं।\nसांसे भारी लग रही हैं,\nमन निरंतर बेचैन है।\nऔर तुम पूछते हो,\nमेरी जान माँ में\nक्यों बसती है?\n\nजब जब स्वयं को समझाती हूं कि बड़ी हो गई हूं अब,\nतब तब मेरे भीतर बैठी वो तीन साल की बच्ची\nबिलख उठती है और रोने लगती है।\nकिसी से कहती नहीं,\nबस मुझे ही बताती है।\n\nकि वो कभी इतनी बड़ी नहीं हो पाएगी,\nकि माँ के लिए ज़िद ना करे।\nनादान है, समझती नहीं कि\nमैंने माँ को \"सब सम्हाल लूँगी\"\nकहकर भेजा है।\n\nकैसे कहूँ माँ से? कि\nउसकी बेटी ही\nसंभलती नहीं।\n\nकैसे कहूँ माँ से, कि उसमें जान बसती है मेरी।"
     },
     {
         "id": 4,
-        "title": "Do Not Go Gentle Into That Good Night",
-        "description": "A passionate plea against accepting death without resistance.",
-        "author": "Dylan Thomas",
-        "content": "Do not go gentle into that good night,\nOld age should burn and rave at close of day;\nRage, rage against the dying of the light.\n\nThough wise men at their end know dark is right,\nBecause their words had forked no lightning they\nDo not go gentle into that good night.\n\nGood men, the last wave by, crying how bright\nTheir frail deeds might have danced in a green bay,\nRage, rage against the dying of the light.\n\nWild men who caught and sang the sun in flight,\nAnd learn, too late, they grieved it on its way,\nDo not go gentle into that good night.\n\nGrave men, near death, who see with blinding sight\nBlind eyes could blaze like meteors and be gay,\nRage, rage against the dying of the light.\n\nAnd you, my father, there on the sad height,\nCurse, bless, me now with your fierce tears, I pray.\nDo not go gentle into that good night.\nRage, rage against the dying of the light."
+        "title": "साहस",
+        "description": "यह कविता पिता के अटूट समर्थन और दृढ़ विश्वास की कहानी है। उनके सख्त हाथों में स्नेह की गहराई है, जो गिरने पर संभालते हैं और उड़ान को आकाश देते हैं।",
+        "author": "भवति ",
+        "content": "मेरे खुलते पंखों को, ज्यों सदा खुला आकाश दिया है |\nवह व्यक्ति जिसने हरदम, मेरी उड़ान पर विश्वास किया है |\nलड़खड़ाने गिरने पर, हाँ, कड़ा सबक दिया है,\nपर फिर खड़े होने को सदा पहला हाथ दिया है।\n\nसंसार की बातों से सहम जाती थी मैं,\nअब बातों को अनसुना करना मैंने सीख लिया है ।\nऔर अपने निर्णय पर अटल रहने का\nहुनर भी मैने अपने पिता से लिया है ।\n\nवो जग के लिए कठोर, मन से अति कोमल व्यक्ति।\nजिसने मेरी प्रगति के लिए हर कष्ट सहा है ।\nवही कारण हैं कि हर निश्चय दृढ़ रहा है मेरा,\nक्योंकि हर कदम पर, \"मैं साथ हूँ\" मेरे पिता ने कहा है ।\n\nधूप-छांव, हार-जीत का तो अनुमान नहीं मुझे \nपर कभी ना रुकने, ना मुड़ने का मैंने प्रण लिया है ।\nक्योंकि जीवन डगर की दिशा दी है माँ ने मुझे,\nऔर उसपर चलने का साहस मैंने अपने पिता से लिया है ।"
     },
     {
         "id": 5,
-        "title": "Fire and Ice",
-        "description": "A short, powerful poem about the end of the world through desire or hate.",
-        "author": "Robert Frost",
-        "content": "Some say the world will end in fire,\nSome say in ice.\nFrom what I've tasted of desire\nI hold with those who favor fire.\nBut if it had to perish twice,\nI think I know enough of hate\nTo say that for destruction ice\nIs also great\nAnd would suffice."
+        "title": "दृष्टिकोण",
+        "description": "क्या हर बहस में जीतना ज़रूरी है? पक्ष-विपक्ष से परे सही और गलत के बीच की सोच।",
+        "author": "भवति",
+        "content": "क्या ज़रूरी है हर वक़्त\nकुछ न कुछ कहना,\nखुदको सही और\nदूसरे को गलत साबित करना?\n\nक्या ज़रूरी है हर बात पर\nये वाद विवाद का ढोल बजाना,\nऔर जीतने के लिए फिर,\nकिसी भी हद तक गिर जाना?\n\nदेख भवति!\nकठपुतलियों के खेल को बुद्धिजीवी,\nअपने जीवन से जोड़ रहे हैं।\nजो हारे बैठे हैं खुद से वो अब,\nऔरों से जीतने को दौड़ रहे हैं!\n\nक्या ज़रूरी है हर बात पर\nदो गुटों में बट जाना?\n'तुम दोनों ही सही नहीं'\nक्या मुश्किल है ये कह पाना?\n\nमहान हो तुम जो अंधों में,\nकाणा राजा चुन लेते हो!\nफिर आडंबर की सुइयों पर भावना-संवेदना के\nधागों से, उसके बखान बुन लेते हो।\n\nजो दिख रहा है उसके परे भी तो देखो।\nयूं ही न रख दो एक पक्ष में अपना मत।\nएक के विरोध में दूजे का समर्थन न करो,\nदेखो क्या है कोई सही? या हैं दोनों गलत!\n\n"
     },
     {
         "id": 6,
-        "title": "Sonnet 18",
-        "description": "One of Shakespeare's most famous sonnets, comparing a beloved to a summer's day.",
-        "author": "William Shakespeare",
-        "content": "Shall I compare thee to a summer's day?\nThou art more lovely and more temperate:\nRough winds do shake the darling buds of May,\nAnd summer's lease hath all too short a date;\nSometime too hot the eye of heaven shines,\nAnd often is his gold complexion dimm'd;\nAnd every fair from fair sometime declines,\nBy chance or nature's changing course untrimm'd;\nBut thy eternal summer shall not fade,\nNor lose possession of that fair thou ow'st;\nNor shall death brag thou wander'st in his shade,\nWhen in eternal lines to time thou grow'st:\n   So long as men can breathe or eyes can see,\n   So long lives this, and this gives life to thee."
+        "title": "वायु",
+        "description": "सर्वव्यापी, अदृश्य और अपरिमेय वायु का आत्मस्वरूप, जो जीवन का आधार भी है और संहारक भी।",
+        "author": "भवति",
+        "content": "मुझसे है पूछे तू पहचान मेरी,\nहे मनुज नहीं सक्षम इतनी, दृष्टि तेरी।\nतेरे समग्र संसार का सार हूं मैं।\nसब कुछ है मुझमें, पर निराकार हूं मैं।\n\nये मुदित पुष्प, ये कलकल झरने,\nइस माटी का अंश है मुझमें।\nतू क्या जाने कितने जीवों का,\nसंपूर्ण वंश है मुझमें।\n\nएक गरीब के चूल्हे की,\nकाली राख समेटे हूं,\nअघोरी के माथे की सज्जा,\nश्वेत भस्म लपेटे हूं।\n\nउल्लासित हृदयों से रंगे,\nगुलाल का हर प्रकार है,\nतो करुण वेदना भी है मुझमें,\nजलती चिता की चित्कार है।\n\nदेख कारखानों से धधकते,\nस्वार्थ की निष्ठुर पतंग,\nदेख ममता से पके भोजन,\nकी निस्वार्थ उमंग।\n\nभक्त के फूलों की सुगंध,\nईश तक पहुंचाती हूं मैं,\nतरु की कोमल कलियों को,\nतेरे प्रिय फल बनाती हूं मैं।\n\nबाल-क्रीड़ा नृत्य से उड़ती,\nनिर्मल धूल बटोरा करती हूं,\nयुद्ध भूमि, रण के घातक\nअभागे शूल सकेरा करती हूं।\n\nकभी शरद की शीतलता हूं,\nतो कभी प्रकोप हूं ग्रीष्म का।\nकभी वादक हूं ध्वनि की,\nतो कभी साधक हूं ऊष्म का।\n\nतेरे समग्र संसार का सार हूं मैं,\nतेरे इस जीवन का आधार हूं मैं।\nशून्य हूं, प्राण का सतत निर्वाह हूं मैं।\nसर्वस्व है जिसमें, वही सर्वव्यापी हवा हूं मैं।\n\n"
     },
     {
         "id": 7,
-        "title": "The Raven",
-        "description": "A narrative poem about a mysterious raven's visit to a grieving lover.",
-        "author": "Edgar Allan Poe",
-        "content": "Once upon a midnight dreary, while I pondered, weak and weary,\nOver many a quaint and curious volume of forgotten lore—\nWhile I nodded, nearly napping, suddenly there came a tapping,\nAs of someone gently rapping, rapping at my chamber door.\n\"'Tis some visitor,\" I muttered, \"tapping at my chamber door—\nOnly this and nothing more.\"\n\nAh, distinctly I remember it was in the bleak December;\nAnd each separate dying ember wrought its ghost upon the floor.\nEagerly I wished the morrow;—vainly I had sought to borrow\nFrom my books surcease of sorrow—sorrow for the lost Lenore—\nFor the rare and radiant maiden whom the angels name Lenore—\nNameless here for evermore."
+        "title": "दाग़",
+        "description": "हमारी असमानताओं और कमियों को स्वीकारने का एक कोमल संदेश।",
+        "author": "भवति",
+        "content": "क्यों मुझे देखते ही तेरे,\nचेहरे की मुस्कान गुम हो जाती है?\nक्यों तेरी सुंदरता मुझे\nस्वीकार नहीं कर पाती है?\n\nरहूँगा या जाऊँगा,\nतू चाहे तो सताऊँगा,\nमगर रंग सभी दिखलाऊँगा,\nऔर ये बतलाऊँगा,\n\nकि एक दाग़ नहीं कर सकता,\nकम तेरे चेहरे का नूर,\nहक़ नहीं किसी को करे,\nकमज़ोर तेरा ख़ुद पे ग़ुरूर।\n\nबना हूँ तुझ ही से,\nतेरा ही हिस्सा हूँ,\nतेरी ख़ूबसूरती का मैं,\nअलग सा क़िस्सा हूँ।\n\nतो अगली बार चाँद में,\nदाग़ ढूँढने वालों को हटा देना,\nदेखके मुझको होठों के,\nकोनों को ज़रा उठा देना।\n\n"
     },
     {
         "id": 8,
-        "title": "Still I Rise",
-        "description": "A powerful anthem about resilience and perseverance against oppression.",
-        "author": "Maya Angelou",
-        "content": "You may write me down in history\nWith your bitter, twisted lies,\nYou may trod me in the very dirt\nBut still, like dust, I'll rise.\n\nDoes my sassiness upset you?\nWhy are you beset with gloom?\n'Cause I walk like I've got oil wells\nPumping in my living room.\n\nJust like moons and like suns,\nWith the certainty of tides,\nJust like hopes springing high,\nStill I'll rise.\n\nDid you want to see me broken?\nBowed head and lowered eyes?\nShoulders falling down like teardrops,\nWeakened by my soulful cries?\n\nDoes my haughtiness offend you?\nDon't you take it awful hard\n'Cause I laugh like I've got gold mines\nDiggin' in my own backyard.\n\nYou may shoot me with your words,\nYou may cut me with your eyes,\nYou may kill me with your hatefulness,\nBut still, like air, I'll rise."
-    }
+        "title": "घर",
+        "description": "एक एहसास, एक सुकून, एक ऐसा ठिकाना जहाँ मन लौटना चाहे, वही घर है।",
+        "author": "भवति",
+        "content": "भरे बाज़ार, भारी भीड़ में जब अकेलापन डराए,\nतब मन जहां जाना चाहे, वो घर है।\n\nदुनिया की नज़रों से बच कर, चुपके से\nदिल जहां छिपना चाहे, वो घर है।\n\nअनजाने, अनमने से हर शोर में,\nजो संगीत याद आए, वो घर है।\n\nदिन भर की थकान समेट कर हर शाम,\nशरीर जहां बिखरना चाहे, वो घर है।\n\nउम्र भर की उलझनें, बेचैनियाँ, शिकन\nएक पल में जहां मिट जाएं, वो घर है।\n\nज़िंदगी की दौड़ में हांफती सी सांसें,\nजहां बेफिक्र, मद्धम हो जाएं, वो घर है।\n\nभीतर उठता गुस्से का अम्बार, जिस से थम जाए\nमन में बसी वो तस्वीर, वही घर है।\n\nजिस देहलीज़ के पार संसार के नियम,\nपरिभाषाएं मिट जाएं, वही घर है।\n\nजहां होठों के वो भारी किनारे, यूँही\nबेवजह उठ जाएं, वही घर है।\n\nजो एहसास जीने की वजह बन जाए,\nजिसका तसव्वुर तुम्हें सुकून दिलाए, वही घर है।\n"
+    },
+    {
+        "id": 9,
+        "title": "युद्ध",
+        "description": "मानवता पर युद्ध के विनाशकारी प्रभावों का एक मर्मस्पर्शी चित्रण, जो सोचने पर मजबूर कर देता है।",
+        "author": "भवति",
+        "content": "सदियों से समझाते आए हैं,\nचाहे अशोक हो या राम,\nयुद्ध नहीं किसी के हित में,\nतो क्यों नहीं है इस पर विराम?\n\nक्यों बुना मानव ने\nयह जंजाल है?\nक्यों बना फिरता मूर्ख \nअपना ही काल है?\n\nजीतता है कोई, पर सदा\nमानवता ही हारती है।\nवहां भूखंड जीते जाते हैं,\nयहां धरती चित्कारती है।\n\nक्यों नहीं ये धुआं, हर नेत्र को\nअश्रुओं से नहला देता?\nक्यों नहीं ये विस्फोट, हर हृदय को\nजोरों से दहला देता?\n\nक्यों भुला देते हैं सब इसे,\nएक अटल सत्य सा मान कर?\nक्यों सिसक उठते हैं मुझ जैसे,\nपर मौन है जग सब जान कर?"
+    },
+    {
+        "id": 10,
+        "title": "भवति",
+        "description": "लेखन के प्रति समर्पण और अपनी पहचान को शब्दों में ढालने की एक आत्ममंथन करती अभिव्यक्ति।",
+        "author": "भवति",
+        "content": "क्या लिखूं, कैसे लिखूं ,\nइसी उलझन में खोई हूं ,\nलेखक हूं, कवि हूं ,\nया शायर कोई हूं ?\n\nजग  के जो काम आए,\nक्या सीख कोई देकर जाऊं ?\nसामाजिक त्रुटियों पर लिखूं ,\nया तराना मन का गाऊं ?\n\nकभी लगता है जग याद करे,\nऐसा कुछ कहकर जाऊं।\nभावनाओं को प्रारूप दूं ,\nया संसार को समझाऊं ।\n\nकहने को तो सत्रह की हूं ,\nऔर इस जग से अंजान भी,\nपर शब्दों को शस्त्र बनाना चाहूं,\nऔर अपना अभिमान भी।\n\nन होकर भी सदा रहूं,\nकुछ यूं संसार में रम जाना है ।\nसुनने वालों के कानों में ,\nपढ़ने वालों के हृदय में बस जाना है।\n\nन पाखंड , न आडंबर ,\nशब्दों से अमृत बनती हूं ,\nहर बात सच्चे  मन से कहूं ,\nतभी ' भवति ' कहलाती हूं ।"
+    },
+    {
+        "id": 11,
+        "title": "मां भारती की पुकार",
+        "description": "समाज में बढ़ती हिंसा और वैमनस्यता पर एक संवेदनशील और भावनात्मक आह्वान, जिसमें भारत माता अपने ही पुत्रों से शांति और एकता की गुहार लगा रही हैं।",
+        "author": "भवति",
+        "content": "देख रही हूँ आज ख़ुद की हालत,\nआँसुओं को ना रोक पा रही हूँ।\nमेरा नाम लेकर ज़ख़्म मुझे ही देते हो,\nतुम्हारे हर वार से घबरा रही हूँ।\n\nमैं नहीं जानती सही और ग़लत \nबात वो पीछे रह गई है,\nतुमने हिंसा का सौदा ये किया जो है,\nक्या शांति इतनी महँगी हो गई है?\n\nवीरता के इस ढोंग से पहले\nक्यों नहीं फिर बच्चे बन जाते हो ?\nइस उपद्रव और आगज़नी को छोड़\nक्यों नहीं बस रूठते और मनाते हो ?\n\nतुम संविधान की रक्षा को,\nलहु मेरा ही बहाते हो\nशांति तुम्हें महँगी लगती है ,\nअरे इतनी सस्ती घृणा कहाँ से लाते हो ?\n\nमैंने तुम में कब भेद किया \nजो तुमने ख़ुद को यूँ बाँट लिया है \nभारत माँ के लाल कहते हो \nये कैसा क़र्ज़ मेरा अदा किया है ?\n\nसमय है समझ जाओ \nमाँ के आँसुओ का कुछ तो मान करो,\nधर्म, जाति बाद में बताना अपनी,\nपहले ख़ुद को इंसान करो।"
+    },
+    {
+        "id": 12,
+        "title": "मैं अधरों से जो ना माँगू",
+        "description": "एक भक्त की अपने कान्हा से अनकही प्रार्थना, जहाँ शब्दों से परे प्रेम और आत्मीय जुड़ाव है।",
+        "author": "भवति",
+        "content": "मैं अधरों से जो ना माँगू,\nवो भी क्या सुनोगे कान्हा?\nनयनों में सदा लिखी है जो,\nक्या कामना वो पढ़ोगे कान्हा?\n\nप्रतिपल हृदय में है वही,\nपर व्यक्त जो होती नहीं,\nवो अनकही मनोरथ मेरी,\nकहो, क्या सफल करोगे कान्हा?\n\nजो भर आए हृदय कभी,\nक्या स्वयं उसे थामोगे कान्हा?\nजो रुंध जाए गला कभी,\nक्या भाव तब भी जानोगे कान्हा?\n\nथक जाऊँ गर राह में कभी,\nक्या सदा की भांति संभालोगे कान्हा?\nखो जाऊँ गर खुद से दूर कभी,\nमुझमें ही क्या मुझको खोज निकालोगे कान्हा?\n\nहर क्षण प्रत्यक्ष के परे भी,\nक्या अपनी सखी को जानोगे कान्हा?\nना रहूं मैं 'मैं' कभी,\nक्या तब भी तुम रहोगे कान्हा?\n\n"
+    },
+    {
+        "id": 13,
+        "title": "साधु कैसा वह साधु है",
+        "description": "अंधश्रद्धा पर सवाल उठाती यह कविता साधु-संतों की वास्तविकता को परखने की प्रेरणा देती है।",
+        "author": "भवति",
+        "content": "साधु कैसा वह साधु है\nलालसा में है धंसा हुआ\nसाधु कैसा वह साधु है\nलोभ, लालच में फंसा हुआ\n\nश्रृद्धा का पर्दा डाले हो\nआंखों को अपनी खोलो तो\nअरे प्रश्न न पूछो न सही\nपर इस संदर्भ में कुछ बोलो तो\n\nबात कड़वी है, मगर जरूरी भी\nचाहो तो आंक लेना\nपर तुम्हारी नाव भवसागर तराने वाला है जो\nज़रा एक नज़र उसकी नाव में भी झांक लेना\n\nजो चला न सके अपनी भी नाव\nवो क्या दरिया पार तुम्हें ले जाएगा\nडूबना उसका तो निश्चित है\nपर संग तुम्हें भी डुबाएगा\n\nजो खुद तक न पहुंच सका\nवो क्या परमेश्वर तक ले जाएगा\nजो खुद में न झांक सका\nवो क्या ईश दर्शन करवाएगा\n\nप्रेम व श्रृद्धा नेत्रहीन कहलाते हैं\nभाव ये पवित्र आंकलन नहीं जानते\nपर यह मुखौटों का संसार है मित्र\nतुम यहां किसी को नहीं पहचानते\n\nविश्वास हो अंधविश्वास नहीं\nबस अंधश्रद्धा से तुम्हें बचाना है\nरूप उसका सभी में देखो\nपर शीष मात्र ईश्वर सम झुकाना है‌।\n\n"
+    },
+    {
+        "id": 14,
+        "title": "मुझे डर है वो आएंगे",
+        "description": "विकास के नाम पर प्रकृति के विनाश की पीड़ा और चिंता को व्यक्त करती यह कविता आधुनिकता और पर्यावरण के संघर्ष पर प्रकाश डालती है।",
+        "author": "भवति",
+        "content": "मुझे डर है वो आएंगे।\nअपनी तरक्की की मशाल से,\nवो मेरा उपवन जला जाएंगे।\nमुझे डर है वो आएंगे।\nमेरे रंग बिरंगे खेतों को,\nबेरंग इमारतों से भर जाएंगे।\nमुझे डर है वो आएंगे।\nजो तालाब कभी मेरा दर्पण था,\nउसे वो विष का पात्र बना जाएंगे।\nमुझे डर है वो आएंगे।\nविकास की मोहरें देकर वो,\nमेरे अमूल्य आभूषण छीन ले जाएंगे।\nमुझे डर है वो आएंगे।\nये अनुपम दृश्य, यह कल-कल धारा,\nवो इनकी मधुरता भी बेच खाएंगे।\nमुझे डर है वो आएंगे।\nइस मधुरता को अनुभव करना कईयों के स्वप्न हैं,\nशायद वे सपने अधूरे ही रह जाएंगे।\nमुझे डर है वो आएंगे।\nबेहतर जीवन का वादा करके,\nवो प्रकृति को ही मिटा जाएंगे।\nमुझे डर है वो आएंगे।\n\n"
+    },
+    
+{
+    "id": 8,
+    "title": "राधा-रुक्मिणी को एक लिखना",
+    "description": "यह कविता प्रेम, प्रतीक्षा, और नियति के गूढ़ भावों को उजागर करते हुए राधा और रुक्मिणी को एक भाव में पिरोने का आग्रह करती है।",
+    "author": "भवति",
+    "content": "ये कलयुग की है गाथा माधव,\nइस कथा में अब स्त्रीत्व लिखना..\nप्रेम लिखो संसार में जब तुम,\nराधा रुक्मिणी को एक लिखना..\n\nपृष्ठ जो प्रतीक्षा का, पृष्ठ वही प्राप्ति का,\nतप और वरदान का वर्णन तुम एक लिखना..\nमार्ग जो धर्म का, मार्ग वही कर्म का,\nप्रेम और संसार का पथ भी एक रखना..\n\nजिस राह पर गमन लिखो,\nआगमन भी वहीं लिखना..\nजिन नेत्रों में वियोग लिखो,\nमिलन भी वहीं लिखना..\n\nजिन हाथों में प्रेम रखो,\nजीवन भी वहीं रखना..\nजहां हृदयों का मेल लिखो,\nनियती भी वहीं लिखना..\n\nअब जब भी तुम प्रेम लिखो,\nराधा रुक्मिणी को एक लिखना।\n\n"
+},
+
+{
+    "id": 9,
+    "title": "सुन जानकी!",
+    "description": "यह कविता जानकी (सीता) के प्रति एक संबोधन है, जो समाज के दोहरे मापदंडों पर प्रश्न उठाते हुए स्त्री के आत्मसम्मान और आत्मनिर्णय की शक्ति को सामने रखती है।",
+    "author": "भवति",
+    "content": "नहीं आएँगी धरती माता,\nअब तुझे अपने लोक ले जाने,\nतेरा लोक, तेरा जीवन,\nअब तेरी तू ही जाने।\n\nइन प्रश्न-चिह्नों से भी ,\nजो तेरी रक्षा न कर पाया,\nसदा साथ देने का उसने,\nये कैसा वचन निभाया?\n\nनहीं रहा युग अब,\nअश्रुओं और प्रलापों का,\nतुझे स्वयं उत्तर लेना होगा,\nअपने सभी संतापों का।\n\nनारी सम्मान के वादे इनके ,\nसब धरे ही रह जाते हैं,\nतुझ पर संदेह करने वाले,\nयहाँ ईश्वर सम पूजे जाते हैं।\n\nप्रेम से ऊपर किसी,\nधर्म की परिभाषा नहीं,\nकुछ प्रश्न पूछ लेना उनसे,\nउत्तर की मुझे आशा नहीं।\n\nगर प्रेम पावन था,\nतो भय कैसा ?\nऔर जो भयभीत जग से हुआ,\nफिर आख़िर वो प्रेम कैसा ?\n\n"
+}
+
+    
+    
+    
+    
+    
+        
+    
+    
+    
+    
+    
 ];

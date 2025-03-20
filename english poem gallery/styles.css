@@ -1,13 +1,17 @@
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
 }
 
 body {
     background-color: #f5f5f5;
     padding: 2rem;
+    background-image: url("../assets/woodbg.png")
+    
 }
 
 header {
@@ -16,9 +20,10 @@ header {
 }
 
 h1 {
-    color: #2c3e50;
+    color: #ffffff;
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
+    
 }
 
 .subtitle {
@@ -29,12 +34,17 @@ h1 {
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    
+        
+      
 }
 
 .poem-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
+    
+      
 }
 
 /* Responsive grid */
@@ -92,13 +102,16 @@ h1 {
 
 .card-front {
     background: linear-gradient(135deg, #3498db, #2c3e50);
+    background-image: url("../assets/wood.jpeg");
     color: white;
+    
 }
 
 .card-back {
-    background: linear-gradient(135deg, #2c3e50, #3498db);
+    background: linear-gradient(135deg, #232527, #2c3235);
     color: white;
     transform: rotateY(180deg);
+    background-image: url("../assets/wood.jpeg");
     overflow-y: auto;
 }
 

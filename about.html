@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhavti | Poetess</title>
+  <style>
+    :root {
+      --primary: #6d4d7a;
+      --secondary: #e6c9dd;
+      --text: #333333;
+      --background: #f9f5f8;
+      --accent: #b86f8e;
+      --transition: all 0.4s ease;
+      --bgimage: url("./assets/day.jpeg");
+    }
+
+    .dark-mode {
+      --primary: #a282b0;
+      --secondary: #463344;
+      --text: #f1e7f0;
+      --background: #1e1a22;
+      --accent: #e89db6;
+      --bgimage: url("./assets/night.jpg");
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+
+    body {
+      background-color: var(--background);
+      background-image: var(--bgimage);
+      background-size: cover;
+      color: var(--text);
+      transition: var(--transition);
+      overflow-x: hidden;
+    }
+
+    /* Typography */
+    h1, h2, h3 {
+      font-weight: 400;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    h2::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+      height: 2px;
+      width: 60px;
+      background-color: var(--accent);
+      transition: var(--transition);
+    }
+
+    p {
+      line-height: 1.8;
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Sections */
+    section {
+      padding: 5rem 2rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* Hero Section */
+    #hero {
+      position: relative;
+      background:  url('/api/placeholder/1920/1080');
+      
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      color: white;
+      text-align: center;
+      padding: 0;
+    }
+
+    .quote-container {
+      max-width: 800px;
+      padding: 2rem;
+    }
+
+    .quote {
+      font-size: 2rem;
+      font-style: italic;
+      margin-bottom: 1rem;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .quote.active {
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 1.5s ease, transform 1.5s ease;
+    }
+
+    .author {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 0vh;
+    }
+
+    /* Introduction Section */
+    .intro-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .portrait {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 2rem;
+      border: 3px solid var(--accent);
+      transition: var(--transition);
+    }
+
+    .typewriter {
+      border-right: 2px solid var(--accent);
+      white-space: nowrap;
+      overflow: hidden;
+      margin: 0 auto;
+      letter-spacing: 1px;
+      animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: var(--accent); }
+    }
+
+    /* Poetry Carousel */
+    .carousel {
+      width: 100%;
+      max-width: 600px;
+      margin: 3rem auto;
+      position: relative;
+      height: 250px;
+    }
+
+    .carousel-item {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(var(--primary-rgb), 0.1);
+      border: 1px solid var(--accent);
+      padding: 2rem;
+      border-radius: 8px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity 1s ease, transform 1s ease;
+      transform: translateX(100px);
+    }
+
+    .carousel-item.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .carousel-controls {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    .carousel-dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background-color: var(--secondary);
+      margin: 0 8px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .carousel-dot.active {
+      background-color: var(--accent);
+      transform: scale(1.2);
+    }
+
+    /* Fact Cards */
+    .facts-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      margin-top: 3rem;
+    }
+
+    .fact-card {
+      position: relative;
+      height: 200px;
+      border-radius: 8px;
+      background-color: var(--secondary);
+      color: var(--text);
+      overflow: hidden;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+
+    .fact-front, .fact-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      backface-visibility: hidden;
+      transition: var(--transition);
+    }
+
+    .fact-front {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+
+    .fact-back {
+      transform: rotateY(180deg);
+      background-color: var(--primary);
+      color: white;
+    }
+
+    .fact-card:hover .fact-front {
+      transform: rotateY(180deg);
+    }
+
+    .fact-card:hover .fact-back {
+      transform: rotateY(0);
+    }
+
+    /* CTA Section */
+    .cta-container {
+      text-align: center;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 12px 30px;
+      background-color: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-size: 1.1rem;
+      letter-spacing: 1px;
+      margin-top: 2rem;
+      transition: var(--transition);
+      border: none;
+      cursor: pointer;
+    }
+
+    .cta-button:hover {
+      background-color: var(--primary);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Theme Toggle */
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 100;
+      background: var(--background);
+      border: 2px solid var(--accent);
+      color: var(--text);
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.5rem;
+      transition: var(--transition);
+    }
+
+    .theme-toggle:hover {
+      transform: rotate(30deg);
+    }
+
+    /* Floating Feather */
+    .feather {
+      position: absolute;
+      pointer-events: none;
+      width: 30px;
+      height: 30px;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23b86f8e' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z'%3E%3C/path%3E%3Cline x1='16' y1='8' x2='2' y2='22'%3E%3C/line%3E%3Cline x1='17.5' y1='15' x2='9' y2='15'%3E%3C/line%3E%3C/svg%3E");
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: 0.1s linear;
+      z-index: 1000;
+      opacity: 0.8;
+      transform-origin: center center;
+    }
+
+    /* Social Links */
+    .social-links {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .social-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: var(--primary);
+      color: white;
+      transition: var(--transition);
+    }
+
+    .social-icon:hover {
+      background-color: var(--accent);
+      transform: translateY(-5px);
+    }
+
+    /* Responsive Styles */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+      
+      h2 {
+        font-size: 2rem;
+      }
+      
+      .quote {
+        font-size: 1.5rem;
+      }
+      
+      .facts-container {
+        grid-template-columns: 1fr;
+      }
+      
+      section {
+        padding: 3rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating Feather 
+  <div class="feather"></div>-->
+
+  <!-- Theme Toggle -->
+  <button class="theme-toggle" id="themeToggle">☀︎</button>
+
+  <!-- Hero Section -->
+  <section id="hero" class="visible">
+    <div class="quote-container">
+      <p class="quote active" id="quote0">न होकर भी सदा रहूं, कुछ यूं संसार में रमना है ।</p>
+      <p class="quote" id="quote1">हर श्रोता के कानों में ,हर पाठक  के हृदय में बसना  है। </p>
+      <p class="quote" id="quote2">न पाखंड , न आडंबर ,शब्दों से अमृत बनाती हूं ,<br>हर बात सच्चे  मन से कहूं ,तभी ' भवति ' कहलाती हूं ।</p>
+      
+      <h1 class="author">Bhavti | भवति </h1>
+    </div>
+  </section>
+
+  <!-- Introduction Section -->
+  <section id="introduction">
+    <div class="container intro-container">
+      <!--<img src="/api/placeholder/400/400" alt="Amelia Rivers" class="portrait">-->
+      <h2>About Me</h2>
+      <p class="typewriter">Poetess | Dreamer | Word Weaver</p>
+<p>Welcome to my world of words and wonder. I am Bhavti, a poetess whose soul speaks through verses, weaving emotions into the fabric of poetry. For years, I have found solace in stanzas, expressing the deepest hues of my heart and the profound echoes of existence.</p>
+<p>My journey with words began in childhood, nurtured by an insatiable love for books. Initially, I poured my thoughts into English, but over time, I discovered that Hindi, my mother tongue, carried a deeper sense of belonging. It allowed me to forge a stronger connection with my audience, making my poetry not just an expression, but a shared experience.</p>
+
+    </div>
+  </section>
+
+  <!-- Poetry Carousel 
+  <section id="poetry">
+    <div class="container">
+      <h2>Featured Poetry</h2>
+      <div class="carousel">
+        <div class="carousel-item active" id="poem0">
+          <h3>Midnight Whispers</h3>
+          <p>In the quiet hours when shadows dance,<br>
+          Words find their courage, take their chance.<br>
+          Spilling from my fingertips like stars,<br>
+          Healing ancient wounds, invisible scars.</p>
+        </div>
+        <div class="carousel-item" id="poem1">
+          <h3>Ocean's Memory</h3>
+          <p>Salt-kissed memories wash ashore,<br>
+          Timeless tales from the ocean floor.<br>
+          Each wave carries whispers of before,<br>
+          Stories the sand has been waiting for.</p>
+        </div>
+        <div class="carousel-item" id="poem2">
+          <h3>Paper Gardens</h3>
+          <p>On blank pages I plant my seeds,<br>
+          Metaphors bloom from emotional needs.<br>
+          Verses grow tall, reaching for light,<br>
+          A garden of words I tend through the night.</p>
+        </div>
+      </div>
+      <div class="carousel-controls">
+        <div class="carousel-dot active" data-index="0"></div>
+        <div class="carousel-dot" data-index="1"></div>
+        <div class="carousel-dot" data-index="2"></div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- Facts Section -->
+  <section id="facts">
+    <div class="container">
+      <h2>Behind the Verses</h2>
+      <p>Hover over each card to discover more about my journey as a poetess.</p>
+      <div class="facts-container">
+        <div class="fact-card">
+          <div class="fact-front">
+            <p>First Publication</p>
+          </div>
+          <div class="fact-back">
+            <p>My first poem was published in "The Literary Echo" when I was just sixteen, after being written on the back of a café napkin during a summer rainstorm.</p>
+          </div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-front">
+            <p>Inspiration</p>
+          </div>
+          <div class="fact-back">
+            <p>I draw inspiration from dawn walks by the ocean, conversations with strangers, and the complex emotions that often hide between spoken words.</p>
+          </div>
+        </div>
+        <div class="fact-card">
+          <div class="fact-front">
+            <p>Writing Ritual</p>
+          </div>
+          <div class="fact-back">
+            <p>Each morning begins with a cup of lavender tea, three minutes of meditation, and writing one verse before reading anything else.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="cta">
+    <div class="container cta-container">
+      <h2>Connect With My Words</h2>
+      <p>Join me on this poetic journey through the landscapes of emotion and thought.Read my latest works, or reach out for collaborations.</p>
+      <a href="index.html#works" class="cta-button">Explore More Poetry</a>
+      
+      <div class="social-links">
+        <a href="#" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v6h-4v-6a2 2 0 0 0-4 0v6h-4v-12h4v2"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+        </a>
+        <a href="#" class="social-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+        </a>
+        <a href="#" class="social-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16v16H4z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    // Theme Toggle
+    const themeToggle = document.getElementById('themeToggle');
+    themeToggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      themeToggle.textContent = document.body.classList.contains('dark-mode') ? '☾' : '☀︎';
+    });
+
+    // Floating Feather
+    const feather = document.querySelector('.feather');
+    document.addEventListener('mousemove', (e) => {
+      // Add slight delay to give floating effect
+      setTimeout(() => {
+        feather.style.left = `${e.clientX}px`;
+        feather.style.top = `${e.clientY}px`;
+        
+        // Add slight rotation based on movement
+        const rotateX = (e.clientY / window.innerHeight - 0.5) * 20;
+        const rotateY = (e.clientX / window.innerWidth - 0.5) * 20;
+        feather.style.transform = `rotate(${rotateX + rotateY}deg)`;
+      }, 100);
+    });
+
+    // Quote Carousel
+    let currentQuoteIndex = 0;
+    const quotes = document.querySelectorAll('.quote');
+    
+    function changeQuote() {
+      quotes.forEach(quote => quote.classList.remove('active'));
+      currentQuoteIndex = (currentQuoteIndex + 1) % quotes.length;
+      quotes[currentQuoteIndex].classList.add('active');
+    }
+    
+    setInterval(changeQuote, 5000);
+
+    // Poetry Carousel
+    const poems = document.querySelectorAll('.carousel-item');
+    const dots = document.querySelectorAll('.carousel-dot');
+    let currentPoemIndex = 0;
+    
+    dots.forEach(dot => {
+      dot.addEventListener('click', () => {
+        const index = parseInt(dot.getAttribute('data-index'));
+        showPoem(index);
+      });
+    });
+    
+    function showPoem(index) {
+      poems.forEach(poem => poem.classList.remove('active'));
+      dots.forEach(dot => dot.classList.remove('active'));
+      
+      poems[index].classList.add('active');
+      dots[index].classList.add('active');
+      currentPoemIndex = index;
+    }
+    
+    // Auto-cycle poems every 8 seconds
+    setInterval(() => {
+      currentPoemIndex = (currentPoemIndex + 1) % poems.length;
+      showPoem(currentPoemIndex);
+    }, 8000);
+
+    // Scroll Animation
+    const sections = document.querySelectorAll('section:not(#hero)');
+    
+    function checkScroll() {
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const sectionBottom = section.getBoundingClientRect().bottom;
+        const windowHeight = window.innerHeight;
+        
+        if (sectionTop < windowHeight * 0.75 && sectionBottom > 0) {
+          section.classList.add('visible');
+        }
+      });
+    }
+    
+    window.addEventListener('scroll', checkScroll);
+    // Initial check in case some sections are already in view
+    checkScroll();
+
+    // Parallax Effect for Hero
+    window.addEventListener('scroll', () => {
+      const hero = document.getElementById('hero');
+      const scrollPosition = window.pageYOffset;
+      hero.style.backgroundPositionY = `${scrollPosition * 0.5}px`;
+    });
+
+    // Typewriter Animation Reset
+    function resetTypewriter() {
+      const typewriter = document.querySelector('.typewriter');
+      typewriter.style.animation = 'none';
+      setTimeout(() => {
+        typewriter.style.animation = 'typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite';
+      }, 10);
+    }
+    
+    // Reset typewriter when intro section becomes visible
+    const observerOptions = {
+      threshold: 0.5
+    };
+    
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          resetTypewriter();
+        }
+      });
+    }, observerOptions);
+    
+    observer.observe(document.getElementById('introduction'));
+  </script>
+</body>
+</html>

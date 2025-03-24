@@ -1,58 +1,11 @@
 const poemsData = [
     {
         "id": 1,
-        "title": "The Road Not Taken",
-        "description": "A reflection on life's choices and paths not followed.",
-        "author": "Robert Frost",
-        "content": "Two roads diverged in a yellow wood,\nAnd sorry I could not travel both\nAnd be one traveler, long I stood\nAnd looked down one as far as I could\nTo where it bent in the undergrowth;\n\nThen took the other, as just as fair,\nAnd having perhaps the better claim,\nBecause it was grassy and wanted wear;\nThough as for that the passing there\nHad worn them really about the same,\n\nAnd both that morning equally lay\nIn leaves no step had trodden black.\nOh, I kept the first for another day!\nYet knowing how way leads on to way,\nI doubted if I should ever come back.\n\nI shall be telling this with a sigh\nSomewhere ages and ages hence:\nTwo roads diverged in a wood, and I—\nI took the one less traveled by,\nAnd that has made all the difference."
-    },
-    {
-        "id": 2,
-        "title": "Hope is the thing with feathers",
-        "description": "A beautiful metaphor for hope as a bird that persists through storms.",
-        "author": "Emily Dickinson",
-        "content": "Hope is the thing with feathers\nThat perches in the soul,\nAnd sings the tune without the words,\nAnd never stops at all,\n\nAnd sweetest in the gale is heard;\nAnd sore must be the storm\nThat could abash the little bird\nThat kept so many warm.\n\nI've heard it in the chillest land,\nAnd on the strangest sea;\nYet, never, in extremity,\nIt asked a crumb of me."
-    },
-    {
-        "id": 3,
-        "title": "Ozymandias",
-        "description": "A meditation on the impermanence of power and the legacy of great leaders.",
-        "author": "Percy Bysshe Shelley",
-        "content": "I met a traveller from an antique land,\nWho said—\"Two vast and trunkless legs of stone\nStand in the desert. . . . Near them, on the sand,\nHalf sunk a shattered visage lies, whose frown,\nAnd wrinkled lip, and sneer of cold command,\nTell that its sculptor well those passions read\nWhich yet survive, stamped on these lifeless things,\nThe hand that mocked them, and the heart that fed;\nAnd on the pedestal, these words appear:\nMy name is Ozymandias, King of Kings;\nLook on my Works, ye Mighty, and despair!\nNothing beside remains. Round the decay\nOf that colossal Wreck, boundless and bare\nThe lone and level sands stretch far away.\""
-    },
-    {
-        "id": 4,
-        "title": "Do Not Go Gentle Into That Good Night",
-        "description": "A passionate plea against accepting death without resistance.",
-        "author": "Dylan Thomas",
-        "content": "Do not go gentle into that good night,\nOld age should burn and rave at close of day;\nRage, rage against the dying of the light.\n\nThough wise men at their end know dark is right,\nBecause their words had forked no lightning they\nDo not go gentle into that good night.\n\nGood men, the last wave by, crying how bright\nTheir frail deeds might have danced in a green bay,\nRage, rage against the dying of the light.\n\nWild men who caught and sang the sun in flight,\nAnd learn, too late, they grieved it on its way,\nDo not go gentle into that good night.\n\nGrave men, near death, who see with blinding sight\nBlind eyes could blaze like meteors and be gay,\nRage, rage against the dying of the light.\n\nAnd you, my father, there on the sad height,\nCurse, bless, me now with your fierce tears, I pray.\nDo not go gentle into that good night.\nRage, rage against the dying of the light."
-    },
-    {
-        "id": 5,
-        "title": "Fire and Ice",
-        "description": "A short, powerful poem about the end of the world through desire or hate.",
-        "author": "Robert Frost",
-        "content": "Some say the world will end in fire,\nSome say in ice.\nFrom what I've tasted of desire\nI hold with those who favor fire.\nBut if it had to perish twice,\nI think I know enough of hate\nTo say that for destruction ice\nIs also great\nAnd would suffice."
-    },
-    {
-        "id": 6,
-        "title": "Sonnet 18",
-        "description": "One of Shakespeare's most famous sonnets, comparing a beloved to a summer's day.",
-        "author": "William Shakespeare",
-        "content": "Shall I compare thee to a summer's day?\nThou art more lovely and more temperate:\nRough winds do shake the darling buds of May,\nAnd summer's lease hath all too short a date;\nSometime too hot the eye of heaven shines,\nAnd often is his gold complexion dimm'd;\nAnd every fair from fair sometime declines,\nBy chance or nature's changing course untrimm'd;\nBut thy eternal summer shall not fade,\nNor lose possession of that fair thou ow'st;\nNor shall death brag thou wander'st in his shade,\nWhen in eternal lines to time thou grow'st:\n   So long as men can breathe or eyes can see,\n   So long lives this, and this gives life to thee."
-    },
-    {
-        "id": 7,
-        "title": "The Raven",
-        "description": "A narrative poem about a mysterious raven's visit to a grieving lover.",
-        "author": "Edgar Allan Poe",
-        "content": "Once upon a midnight dreary, while I pondered, weak and weary,\nOver many a quaint and curious volume of forgotten lore—\nWhile I nodded, nearly napping, suddenly there came a tapping,\nAs of someone gently rapping, rapping at my chamber door.\n\"'Tis some visitor,\" I muttered, \"tapping at my chamber door—\nOnly this and nothing more.\"\n\nAh, distinctly I remember it was in the bleak December;\nAnd each separate dying ember wrought its ghost upon the floor.\nEagerly I wished the morrow;—vainly I had sought to borrow\nFrom my books surcease of sorrow—sorrow for the lost Lenore—\nFor the rare and radiant maiden whom the angels name Lenore—\nNameless here for evermore."
-    },
-    {
-        "id": 8,
-        "title": "Still I Rise",
-        "description": "A powerful anthem about resilience and perseverance against oppression.",
-        "author": "Maya Angelou",
-        "content": "You may write me down in history\nWith your bitter, twisted lies,\nYou may trod me in the very dirt\nBut still, like dust, I'll rise.\n\nDoes my sassiness upset you?\nWhy are you beset with gloom?\n'Cause I walk like I've got oil wells\nPumping in my living room.\n\nJust like moons and like suns,\nWith the certainty of tides,\nJust like hopes springing high,\nStill I'll rise.\n\nDid you want to see me broken?\nBowed head and lowered eyes?\nShoulders falling down like teardrops,\nWeakened by my soulful cries?\n\nDoes my haughtiness offend you?\nDon't you take it awful hard\n'Cause I laugh like I've got gold mines\nDiggin' in my own backyard.\n\nYou may shoot me with your words,\nYou may cut me with your eyes,\nYou may kill me with your hatefulness,\nBut still, like air, I'll rise."
-    }
+        "title": "Be Unapologetically Authentic",
+        "description": "A heartfelt reflection on self-love, growth, and embracing one's true self without fear of judgment.",
+        "author": "Bhavti",
+        "content": "This feeling that holds me right now, is too precious to be left unwritten. Yes, it is love. I am falling in love, all over again. With whom? With myself, silly! After all, I was and will always be my first love na. And the amount of growth I have been noticing in myself lately, it is what I once dreamt of.\n\nHaving been the little girl that I was—timid, hesitant, insecure, and whatnot—it took a lot of fake confidence and stick-on smiles to hide it all. But now? I see it coming naturally (fingers crossed). I’m no longer that bothered by opinions, judgments, or even the loss of people.\n\nI always loved to talk, been the loud little girl who was told to ‘Shut up,’ ‘Talk less,’ ‘Don’t be loud,’ and that went in deep as insecurities—an anxiety of never fitting in, of being the odd one out. And yes, I was right, I don’t fit in. I will always be too loud, too excited, too bubbly for many. But I feel loved exactly as I am, and that is what matters. I remember crying my eyes out for nights whenever someone pointed out my outspoken or hyperactive nature or physical flaws. It hardly affects me now, and I am proud of this progress.\n\nAfter all these years of suppressing my identity just to fit in, to not catch attention, to stay away from the limelight, to follow the set rules—I feel I have accepted myself now. I see myself having fun, laughing out loud, dancing, singing, acting, all for fun! This was all a dream!! A dream that I see myself living now. The dream of not being affected by gazes, not being afraid of judgment, of stepping out of societal norms.\n\nAs someone who never stepped out in public all this time, growing up into someone who can now stand for others too, I am falling in love with these changes. I hope someday everyone who has suppressed any part of their being gets to witness their growth and fall in love with themselves too.\n\nYou’ll always be judged, you’ll always be hated, but don’t let that affect you. No singer will ever judge your love for singing, no dancer will ever judge you for dancing your heart out… The only reason someone hates you is because you have something they don’t, which is courage. Don’t let anyone take that away from you, ever! Be yourself unapologetically!\n\nI don’t know if my family or this society will ever fully accept the woman that I am becoming, but my love does, my friends do, my sister does, and most importantly, I do. Even if nobody takes pride in my growth, in my journey—I do. The little girl in me does. I am proud of my growth.\n\nAll I hope is the same for everyone. This is a reminder to look back upon your journey and see how far you have come. Take pride in it. Love yourself a little more every day.\n\nBe Unapologetically Authentic!"
+      },
+      
+    
 ];

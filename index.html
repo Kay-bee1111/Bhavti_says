@@ -5,12 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bhavti | Poetry Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Gotu&family=Kalam:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Cormorant Garamond', serif;
+
         }
         
         /* Hero Section Styles */
@@ -38,7 +45,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            padding: 1.5rem 3rem;
+            padding: 0rem 3rem;
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             z-index: 100;
@@ -49,9 +56,11 @@
 
         .nav-logo {
             color: #fff;
-            font-size: 1.5rem;
+            font-size: 4rem;
             text-decoration: none;
-            font-weight: 600;
+            font-weight: 300;
+            font-family: "Fleur De Leah", cursive;
+            font-style: normal;
         }
 
         .nav-links {
@@ -81,13 +90,13 @@
         }
 
         .hero-content h1 {
-            font-size: 5rem;
+            font-size: 6rem;
             margin-bottom: 1rem;
-            font-weight: 300;
+            
         }
 
         .hero-content h2 {
-            font-size: 2rem;
+            font-size: 1.5rem;
             font-weight: 300;
             color: #ffd700;
         }
@@ -96,6 +105,7 @@
         .cards-section {
             padding: 5rem 3rem;
             background: #2d2d2d;
+            background-image: url("assets/woodbg.png");
         }
 
         .cards-grid {
@@ -105,6 +115,20 @@
             max-width: 1200px;
             margin: 0 auto;
         }
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.1);
+    background-image: url("assets/wood.jpeg");
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: rgb(202, 163, 145);
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
 
         .card {
             perspective: 1000px;
@@ -124,6 +148,7 @@
             transform: rotateY(180deg);
         }
 
+
         .card-front, .card-back {
             position: absolute;
             width: 100%;
@@ -131,28 +156,29 @@
             backface-visibility: hidden;
             border-radius: 15px;
             overflow: hidden;
+            background: rgba(255, 255, 255, 0.1); /* Light transparent effect */
+            backdrop-filter: blur(15px); /* Frosted glass effect */
+            -webkit-backdrop-filter: blur(15px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle border */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            text-align: center;
         }
 
         .card-front {
-            background: #fff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-            text-align: center;
+            
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
         .card-back {
-            background: #2c3e50;
+            background: rgba(44, 62, 80, 0.4); /* Darker glass effect */
             color: #fff;
             transform: rotateY(180deg);
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 2rem;
-            text-align: center;
         }
 
         .card h3 {
@@ -164,6 +190,11 @@
             font-size: 1.1rem;
             line-height: 1.6;
         }
+        .hindi-heading{
+            font-family: "Gotu", sans-serif;
+  font-weight: 900;
+  font-style: bold;
+            }
 
         .card-link {
             color: inherit;
@@ -186,22 +217,24 @@
             .nav-links {
                 gap: 1rem;
             }
+            
         }
     </style>
 </head>
+
 <body>
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="hero">
         <video class="video-bg" autoplay muted loop>
             <source src="./writing_-_107240 (1080p).mp4" type="video/mp4">
         </video>
         
         <nav class="navbar">
-            <a href="#" class="nav-logo">B.</a>
+            <a href="#hero" class="nav-logo">B.</a>
             <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#poems">Poems</a>
-                <a href="#about">About</a>
+                <a href="#hero">Home</a>
+                <a href="#works">Poems</a>
+                <a href="about.html">About</a>
                 <a href="#contact">Contact</a>
             </div>
         </nav>
@@ -213,19 +246,19 @@
     </section>
 
     <!-- Cards Section -->
-    <section class="cards-section">
+    <section class="cards-section" id="works">
         <div class="cards-grid">
             <!-- Card 1 -->
             <div class="card">
                 <a href="hindi poem gallery/hindipoem.html" class="card-link">
                     <div class="card-inner">
                         <div class="card-front">
-                            <h3>कविताएँ</h3>
-                            <p>Expressions of the heart's deepest emotions</p>
+                            <h3 class="hindi-heading">कविताएँ</h3>
+                            <p>शब्दों की स्याही, एहसासों की कहानी</p>
                         </div>
                         <div class="card-back">
                             <h3>Hindi Poems</h3>
-                            <p>A collection of poems celebrating love in all its forms</p>
+                            <p>दिल से निकले अल्फ़ाज़, जो आपके जज़्बातों को छू जाएँ।</p>
                         </div>
                     </div>
                 </a>
@@ -237,11 +270,11 @@
                     <div class="card-inner">
                         <div class="card-front">
                             <h3>English Poems </h3>
-                            <p>Verses inspired by the natural world</p>
+                            <p>Whispers of the Heart, Inked in Verses</p>
                         </div>
                         <div class="card-back">
-                            <h3>Natural Beauty</h3>
-                            <p>Poetry that captures the essence of earth's wonders</p>
+                            <h3>English Poems</h3>
+                            <p>A collection of emotions woven into words, waiting to be felt.</p>
                         </div>
                     </div>
                 </a>
@@ -253,10 +286,10 @@
                     <div class="card-inner">
                         <div class="card-front">
                             <h3>Others </h3>
-                            <p>Reflections on life's paths</p>
+                            <p>(Shayari, Verses, and More)</p>
                         </div>
                         <div class="card-back">
-                            <h3>Life Stories</h3>
+                            <h3>हर एहसास, हर अंदाज़</h3>
                             <p>Poetic narratives about life's adventures and lessons</p>
                         </div>
                     </div>
@@ -270,15 +303,15 @@
         <div class="cards-grid">
             <!-- Card 4 -->
             <div class="card">
-                <a href="hindi poem gallery/hindipoem.html" class="card-link">
+                <a href="about.html" class="card-link">
                     <div class="card-inner">
                         <div class="card-front">
-                            <h3>About me</h3>
-                            <p>Expressions of the heart's deepest emotions</p>
+                            <h3>About Me</h3>
+                            <p>(The Poetess, Bhavti)</p>
                         </div>
                         <div class="card-back">
-                            <h3>Hindi Poems</h3>
-                            <p>A collection of poems celebrating love in all its forms</p>
+                            <h3>Behind the Words, Beyond the Rhymes</h3>
+                            <p>Meet the soul behind the verses, weaving emotions into poetry.</p>
                         </div>
                     </div>
                 </a>
@@ -286,15 +319,15 @@
 
             <!-- Card 2 -->
             <div class="card">
-                <a href="english poem gallery/englishpoem.html" class="card-link">
+                <a href="./fav gallery/fav.html" class="card-link">
                     <div class="card-inner">
                         <div class="card-front">
-                            <h3>My favourites</h3>
-                            <p>Verses inspired by the natural world</p>
+                            <h3>My Favourites</h3>
+                            <p>(Poems I Love)</p>
                         </div>
                         <div class="card-back">
-                            <h3>Natural Beauty</h3>
-                            <p>Poetry that captures the essence of earth's wonders</p>
+                            <h3>Echoes That Stay, Words That Linger</h3>
+                            <p>A handpicked collection of poems that touched my heart.</p>
                         </div>
                     </div>
                 </a>
@@ -302,15 +335,15 @@
 
             <!-- Card 3 -->
             <div class="card">
-                <a href="other gallery\other.html" class="card-link">
+                <a href="https://www.instagram.com/bhavti_says/" class="card-link">
                     <div class="card-inner">
                         <div class="card-front">
                             <h3>Contact Me</h3>
-                            <p>Reflections on life's paths</p>
+                            <p>Let's Connect Beyond Words</p>
                         </div>
                         <div class="card-back">
-                            <h3>Life Stories</h3>
-                            <p>Poetic narratives about life's adventures and lessons</p>
+                            <h3>@bhavti_says</h3>
+                            <p>Reach out, share your thoughts, or just say hello! Find me on Instagram.</p>
                         </div>
                     </div>
                 </a>
@@ -342,4 +375,7 @@
         });
     </script>
 </body>
+<footer class="footer">
+    <p>Made by Krati Bhardwaj © 2025</p>
+</footer>
 </html>
